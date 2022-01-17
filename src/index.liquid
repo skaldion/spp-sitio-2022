@@ -1,0 +1,61 @@
+---
+layout: default
+title: 'Inicio'
+path: home
+---
+
+{% include ./_includes/partials/heroes/split.html,
+    title:"Capital Humano"
+    subtitle:"y Técnico"
+    paragraph:"Somos una compañía aseguradora 100% mexicana. Contamos con una amplia experiencia en seguros con una sólida área de ingeniería. "
+    button_1:"Contáctanos"
+    button_2:"Leer Más"
+    image:"/static/img/1a.avif"
+    alt:""
+%}
+
+{% include ./_includes/partials/cta-sections/simple-centered-branded.html,
+    title:"Nuestro potencial"
+    subtitle:"está en nuestro gran equipo"
+    paragraph:"Contamos con un equipo cuya amplia experiencia en seguros sumado a una sólida área de Ingeniería nos permite avalar la calidad en los proyectos, contribuyendo en la prevención y eliminación de riesgos, detectando a tiempo las posibles desviaciones y así emitir opiniones colegiadas y especializadas en cada proyecto."
+    linkText:"Conócenos"
+    linkURL:"/nosotros"
+%}
+
+{% include ./_includes/partials/spp/lista-seguros
+    title: "Nuestros Seguros"
+    highlight: "Empresa 100% mexicana"
+    paragraph: "Amplia experiencia en seguros con una sólida área de ingeniería."
+%}
+
+{% include ./_includes/partials/cta-sections/split-with-image.html,
+    image:"/static/img/2a.avif"
+    alt:""
+    highlight:"SOMOS PIONEROS Y EXPERTOS"
+    title:"En Seguros de Vicios Ocultos"
+    paragraph:"Contamos con una gran experiencia en indemnizar y reparar daños causados por errores de construcción."
+    button_1:"Seguir leyendo"
+    buttonURL: "/seguros/vicios-ocultos"
+%}
+
+{% include ./_includes/partials/spp/lista-seguros
+    title: "Nuestros Seguros"
+    highlight: "Empresa 100% mexicana"
+    paragraph: "Amplia experiencia en seguros con una sólida área de ingeniería."
+%}
+
+{% include ./_includes/partials/cta-sections/simple-centered-branded.html,
+    title:"Conozca toda nuestra gama de seguros que le ofrecemos en SPP,"
+    subtitle:"tenemos el producto para cada tipo de necesidad"
+    paragraph:"Contamos con una amplia gama de productos para poder satisfacer las necesidades que cada uno de nuestros clientes y asegurados."
+    linkText:"Conoce más"
+    linkURL:"/seguros"
+%}
+
+{% include ./_includes/partials/cta-sections/brand-panel-with-overlapping-image.html,
+    image:"/static/img/3a.avif"
+    alt:""
+    title:"Da el siguiente paso"
+    paragraph:"Podemos ser tu mejor aliado en cuestión de seguros, tenemos el producto a la medida para tus necesidades."
+    button:"Contáctanos"
+%}

@@ -1,0 +1,25 @@
+---
+layout: default
+title: 'Atención a Clientes'
+eleventyExcludeFromCollections: true
+---
+
+{% include ../_includes/partials/headers/simple-centered.html,
+    highlight:"Da el primer paso"
+    title:"Atención a Clientes"
+    paragraph:"Nos encontramos a sus ordenes con la finalidad de que pueda aclarar sus dudas e inquietudes y así poder brindar un servicio de calidad acorde a sus necesidades. "
+%}
+
+{% include ../_includes/partials/contact-sections/simple-two-column.liquid,
+    title_1:"Soporte de Ventas"
+    paragraph_1:"Llama a nuestro Departamento de Atención a Clientes:"
+    phone_1:"CDMX y Área Metropolitana: 55-36-00-96-00 "
+    time_1:"Interior de la República: 800-10-10-053 "
+    mail_1:"contacto@sppseguros.com.mx "
+%}
+
+{% include ../_includes/partials/faqs/centered-accordion.html,
+    title:"Preguntas frecuentes"
+
+    faq: faq.items
+%}

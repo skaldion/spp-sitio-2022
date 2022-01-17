@@ -1,0 +1,36 @@
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div class="bg-white py-16 sm:py-24 lg:py-32">
+    <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+        <h2 class="text-base font-semibold tracking-wider text-indigo-600 uppercase">{{highlight}}</h2>
+        <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
+            {{title}}
+        </p>
+        <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
+            {{paragraph}}
+        </p>
+        <div class="mt-12">
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                {% for seguro in collections.segurosSorted %}
+                    <a href="{{ seguro.url }}" class="cursor-pointer">
+                        <div class="pt-6">
+                            <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8 hover:shadow-lg hover:bg-blue-100">
+                                <div class="-mt-6">
+                                    <div>
+                                    <span class="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                                      <!-- Heroicon name: outline/server -->
+                                      {{icons.materialIcons[seguro.data.iconName]}}
+                                    </span>
+                                    </div>
+                                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">{{seguro.data.title}}</h3>
+                                    <p class="mt-5 text-base text-gray-500">
+                                        {{seguro.data.previewDescription}}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

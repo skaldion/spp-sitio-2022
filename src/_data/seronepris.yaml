@@ -1,0 +1,101 @@
+---
+OC:
+  - Cobertura Básica (Incendio rayo y/o explosión).
+  - Daños causados por terremoto, temblor, maremoto y erupción volcánica.
+  - Daños causados por Ciclón, huracán, tornado, granizo, inundación, derrumbes o hundimientos.
+  - Daños causados directamente por el contratista a la obra con motivo de la ejecución de los trabajos a que le obliga el contrato de mantenimiento.
+  - Responsabilidad Civil por daños materiales.
+  - Responsabilidad Civil por daños morales.
+  - Remoción de Escombros
+
+EDC:
+  - Incendio, rayo y explosión, varada, hundimiento o colisión de la embarcación de transbordo fluvial de servicio regular en que los bienes asegurados fueren transportados, incluyendo las caídas y colisiones durante las maniobras de carga y descarga, comprendiendo la contribución por avería gruesa o por cargos de salvamento que será pagada según las disposiciones del Código de Comercio Mexicano y de la Ley de Navegación y Comercio Marítimo.
+  - Incendio, rayo y explosión, colisión, descarrilamiento o volcadura del medio de transporte terrestre en que los bienes asegurados fueren transportados, incluyendo caída de aviones, hundimiento o rotura de puentes, así como las maniobras de carga y descarga.
+  - Robo total de cada unidad, así como las pérdidas o daños materiales que sufran a consecuencia de dicho robo.
+  - Hundimiento o rotura de alcantarillas, puentes para vehículos, muelles o plataformas de carga.
+  - Colisión con objetos en movimiento o estacionarios, volcadura, caída y enfangamiento.
+  - Derrumbe, deslave, hundimiento, deslizamiento del terreno y salud.
+  - Ciclón, tornado, vendaval, huracán, granizo.
+  - Temblor, terremoto, erupción volcánica.
+  - Huelgas y Alborotos Populares
+  - Todo Riesgo por Daño Físico
+  - Gastos Extraordinarios
+  - Incendio y/o rayo.
+  - Explosión.
+  - Inundación.
+
+VO:
+  - Estructura
+  - Instalaciones (Hidrosanitarias, Eléctricas, Gas).
+  - Impermeabilización.
+  - Acabados *sólo en casos especiales.
+  - Remoción de escombros.
+  - Gastos Extraordinarios de Siniestro.
+  - Acabados Especiales.
+  - Instalaciones Especiales
+
+GHPI:
+  - Daños Estructurales (Durante un periodo de 10 años).
+  - Impermeabilización (Durante un periodo de 5 años).
+  - Instalaciones hidrosanitarias, eléctricas y de gas. (Durante un periodo de 2 años).
+
+GHPF:
+  - Daños Estructurales (Durante un periodo de 10 años)
+  - Impermeabilización (Durante un periodo de 5 años)
+  - Instalaciones hidrosanitarias, eléctricas, gas y telefónica . (Durante un periodo de 2 años)
+  - Deducible del 1% para cualquier siniestro.
+
+EE:
+  - Incendio, impacto directo o rayo, implosión, explosión, extinción de incendio,
+  - Humo, hollín, gases, líquidos o polvos corrosivos, acción del agua o humedad que no provengan de las condiciones atmosféricas comunes en la región.
+  - Corto circuito, arco voltaico, perturbaciones por campos magnéticos, sobretensiones causadas por rayo, tostaduras de aislamiento.
+  - Defectos de fabricación, de material, de diseño o instalación.
+  - Errores de manejo, descuidos, negligencia, impericia o mala intención del personal del asegurado.
+  - Actos mal intencionados y dolo de terceros.
+  - Pérdidas o daños materiales causados por robo o violencia, tentativa de robo o asalto.
+  - Hundimiento del terreno, deslizamiento de tierra, caída de rocas, aludes que no sean causados por terremoto o erupción volcánica, granizo y helada.
+  - Cuerpos extraños que se introduzcan en los bienes asegurados.
+  - Otros Daños no excluidos en esta póliza.
+  - Terremoto y erupción volcánica.
+  - Granizo, ciclón, Huracán o Vientos Tempestuosos.
+  - Inundación.
+  - Huelgas, alborotos populares, conmoción civil, vandalismo y daños por actos de personas mal intencionadas.
+  - Robo sin violencia (solo para equipo fijo).
+  - Daños que sobrevengan en el equipo electrónico asegurado a consecuencia de daño material en el equipo de climatización.
+
+APM:
+  - Muerte Accidental
+  - Reembolso de Gastos Médicos por Accidente
+  - Invalidez Total y Permanente (Sólo empresas)
+  - Perdidas Orgánicas (Escala A o B)
+  - Gastos Funerarios por Muerte Accidental (Indemnizatorio)
+
+APP:
+  - Muerte Accidental
+  - Invalidez Total y Permanente
+  - Gastos Funerarios por Muerte Accidental
+
+APE:
+  - Muerte Accidental
+  - Reembolso de Gastos Médicos por Accidente
+  - Perdidas Orgánicas (Escala A o B)
+
+RC:
+  - Responsabilidad por Privacidad.
+  - Responsabilidad por Seguridad de la Red.
+  - Responsabilidad por Contenidos Electrónicos.
+  - Cyber Extorsión.
+  - Pérdida de Activos Digitales.
+  - Interrupción del Negocio.
+
+RDM:
+  - Impericia, negligencia y actos malintencionados individuales del personal del Asegurado o de extraños.
+  - La acción directa de la energía eléctrica como resultado de cortocircuitos, arcos voltaicos y otros efectos similares, así como los debidos a perturbaciones eléctricas consecuentes a la caída del rayo en las proximidades de la instalación.
+  - Errores de diseño, cálculo o montaje, defectos de fundición, de material, de construcción, de mano de obra y empleo de materiales defectuosos.
+  - Falta de agua en calderas y otros aparatos productores de vapor.
+  - Fuerza centrífuga, pero solamente la pérdida o daño sufrido por desgarramiento en la máquina misma.
+  - Cuerpos extraños que se introduzcan en los bienes asegurados o los golpeen.
+  - Defectos de engrase, aflojamiento de piezas, esfuerzos anormales y autocalentamiento.
+  - Fallo en los dispositivos de regulación.
+  - Tempestad, granizo, helada y deshielo.
+  - Cualquier otra causa no excluida expresamente según lo dispuesto en la cláusula 4ª “Riesgos Excluidos”.

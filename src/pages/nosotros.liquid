@@ -1,0 +1,39 @@
+---
+layout: default
+title: Nosotros
+permalink: 'nosotros/index.html'
+order: 1
+---
+
+{% include ../_includes/partials/headers/branded-with-background-image.html,
+    main_title:"Nosotros"
+    main_paragraph:"Compañía aseguradora 100% mexicana enfocada en garantizar la calidad en la construcción y brindar protección frente a imprevistos y accidentes de nuestros clientes."
+    image:"/static/img/1b.avif"
+    alt:""
+%}
+
+{% include ../_includes/partials/feature-sections/centered-2x2.html,
+    highlight:""
+    main_title:"SPP Institución de Seguros"
+
+    principles: principles.items
+
+        mision-vision: mision-vision.items
+%}
+
+{% include ../_includes/partials/feature-sections/on-brand-4x2-grid.html,
+    main_title:"Valores"
+    main_paragraph:"Nuestra sólida base de capital nos respaldan, brindando confianza a nuestros Asegurados y socios comerciales, avalada por nuestra calificación B2/Ba1.mx otorgada por Moody´s."
+
+    valores: valores.items
+%}
+
+{% include ../_includes/partials/headers/with-background-image-and-cards.html,
+    image:"/static/img/2b.avif"
+    alt:""
+    main_title:"Nuestro equipo te guiará a través de tu primera compra"
+    main_paragraph:"Conoce más sobre cómo trabajar con nosotros. Nuestros planes, metodologías y seguros que ofrecemos."
+
+    usatens: usatens.items
+
+%}
