@@ -4,6 +4,17 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 
 const ascendingByOrderNumber = (a, b) => a.data.order - b.data.order
+const descendingByDate = (a, b) => {
+  const d1 = DateTime.fromJSDate(a.date)
+  const d2 = DateTime.fromJSDate(b.date)
+  if (d2 < d1) {
+    return -1
+  }
+  if (d2 > d1) {
+    return 1
+  }
+  return 0
+}
 
 module.exports = function (eleventyConfig) {
   // Disable automatic use of your .gitignore
@@ -56,6 +67,13 @@ module.exports = function (eleventyConfig) {
 
     return content;
   });
+
+  eleventyConfig.addCollection("latestPosts", function(collectionApi) {
+    return collectionApi
+        .getFilteredByTag('post')
+        .sort(descendingByDate)
+        .filter((item, index) => index < 3)
+  })
 
   eleventyConfig.addCollection("condicionesSorted", function(collectionApi) {
     return collectionApi
