@@ -52,13 +52,10 @@ iconName:""
     '
 %}
 
-{% include ../_includes/partials/feature-sections/with-feature-list.html,
-highlight:"SEGURO DE CALIDAD INFONAVIT"
-        main_title:"Descarga las guías para desarrolladores"
-        main_paragraph:""
-
-        condiciones: condiciones.GHPI
-
+{% include ../_includes/partials/lists/horizontal-link-cards,
+        title:"Seguro de Calidad INFONAVIT"
+        description:"Descarga las guías para desarrolladores"
+        items: docs.infonavit
 %}
 
 {% include ../_includes/partials/cta-sections/split-with-image.html,
@@ -68,4 +65,5 @@ image:"/static/img/3f.avif"
         title:"Nosotros tenemos una manera de llevarte allí con toda seguridad."
         paragraph:""
         button_1:"Contáctanos"
+        buttonURL: "/contacto/#contact-form"
 %}

@@ -38,18 +38,17 @@ path: home
     buttonURL: "/seguros/vicios-ocultos"
 %}
 
-{% include ./_includes/partials/spp/lista-seguros
-    title: "Nuestros Seguros"
-    highlight: "Empresa 100% mexicana"
-    paragraph: "Amplia experiencia en seguros con una sólida área de ingeniería."
-%}
-
 {% include ./_includes/partials/cta-sections/simple-centered-branded.html,
     title:"Conozca toda nuestra gama de seguros que le ofrecemos en SPP,"
     subtitle:"tenemos el producto para cada tipo de necesidad"
     paragraph:"Contamos con una amplia gama de productos para poder satisfacer las necesidades que cada uno de nuestros clientes y asegurados."
     linkText:"Conoce más"
     linkURL:"/seguros"
+%}
+
+{% include ./_includes/partials/blog-sections/latestPosts
+    title:"Publicaciones Recientes"
+    intro:"Mantente siempre informado con nuestros artículos."
 %}
 
 {% include ./_includes/partials/cta-sections/brand-panel-with-overlapping-image.html,
