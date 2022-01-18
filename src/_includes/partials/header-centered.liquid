@@ -1,7 +1,7 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <div
     class="relative bg-white shadow"
-    x-data="{segurosActive: false, segurosMobileActive: false}"
+    x-data="{segurosActive: false, segurosMobileActive: false, condicionesActive: false}"
 >
     <div class="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
         <div class="flex justify-start lg:w-0 lg:flex-1">
@@ -117,6 +117,86 @@
                     </div>
                 </div>
             </div>
+            <div class="relative">
+                <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
+                <button
+                        @click="condicionesActive = !condicionesActive"
+                        @click.away="condicionesActive = false"
+                        type="button"
+                        class="group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-{{ settings.highlightColor }}-500"
+                        :class="segurosActive ? 'text-gray-900' : 'text-gray-500'"
+                        aria-expanded="condicionesActive ? 'true' : 'false'"
+                >
+                    <span class="p-1">Condiciones</span>
+                    <!--
+                      Heroicon name: solid/chevron-down
+
+                      Item active: "text-gray-600", Item inactive: "text-gray-400"
+                    -->
+                    <svg
+                            class="ml-2 h-5 w-5 group-hover:text-gray-500"
+                            :class="condicionesActive ? 'text-gray-600' : 'text-gray-400'"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            aria-hidden="true"
+                    >
+                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+
+                <!--~
+                      'Solutions' flyout menu, show/hide based on flyout menu state.
+
+                      Entering: "transition ease-out duration-200"
+                        From: "opacity-0 translate-y-1"
+                        To: "opacity-100 translate-y-0"
+                      Leaving: "transition ease-in duration-150"
+                        From: "opacity-100 translate-y-0"
+                        To: "opacity-0 translate-y-1"
+                    -->
+                <div
+                        class="absolute z-10 -ml-4 mt-3 transform w-screen max-w-md lg:max-w-2xl lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"
+                        x-show="condicionesActive"
+                        x-transition:enter="transition ease-out duration-200"
+                        x-transition:enter-start="transform opacity-0 translate-y-1"
+                        x-transition:enter-end="transform opacity-100 translate-y-0"
+                        x-transition:leave="transition ease-in duration-150"
+                        x-transition:leave-start="transform opacity-100 translate-y-0"
+                        x-transition:leave-end="transform opacity-0 translate-y-1"
+                        x-cloak
+                >
+                    <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                        <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
+                            {% for condicion in collections.condicionesSorted %}
+
+                                {% if page.url == condicion.url %}
+                                    {% assign currentPageAria = 'aria-current="page"' %}
+                                    {% assign currentPageClass = 'bg-blue-100' %}
+                                {% else %}
+                                    {% assign currentPageAria = '' %}
+                                    {% assign currentPageClass = '' %}
+                                {% endif %}
+
+                                <a href="{{ condicion.url }}" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                                    <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-{{ settings.highlightColor }}-500 text-white sm:h-12 sm:w-12">
+                                        <!-- Heroicon name: outline/chart-bar -->
+                                        {{icons.materialIcons[condicion.data.iconName]}}
+                                    </div>
+                                    <div class="ml-4">
+                                        <p class="text-base font-medium text-gray-900">
+                                            {{ condicion.data.title }}
+                                        </p>
+                                        <p class="mt-1 text-sm text-gray-500">
+                                            {{ condicion.data.menuPreview }}
+                                        </p>
+                                    </div>
+                                </a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             {% for navPage in collections.pagesSorted %}
 
@@ -228,6 +308,31 @@
                                 </div>
                             </a>
                         {% endfor %}
+                        {% for condicion in collections.condicionesSorted %}
+
+                            {% if page.url == condicion.url %}
+                                {% assign currentPageAria = 'aria-current="page"' %}
+                                {% assign currentPageClass = 'bg-blue-100' %}
+                            {% else %}
+                                {% assign currentPageAria = '' %}
+                                {% assign currentPageClass = '' %}
+                            {% endif %}
+
+                            <a href="{{ condicion.url }}" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                                <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-{{ settings.highlightColor }}-500 text-white sm:h-12 sm:w-12">
+                                    <!-- Heroicon name: outline/chart-bar -->
+                                    {{icons.materialIcons[condicion.data.iconName]}}
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-base font-medium text-gray-900">
+                                        {{ condicion.data.title }}
+                                    </p>
+                                    <p class="mt-1 text-sm text-gray-500">
+                                        {{ condicion.data.menuPreview }}
+                                    </p>
+                                </div>
+                            </a>
+                        {% endfor %}
                     </nav>
                 </div>
             </div>
@@ -251,6 +356,18 @@
                             {{ navPage.data.title }}
                         </a>
                     {% endfor %}
+                    {% if page.url == "/aviso-de-privacidad" %}
+                        {% assign currentPageAria = 'aria-current="page"' %}
+                    {% else %}
+                        {% assign currentPageAria = '' %}
+                    {% endif %}
+                    <a
+                        href="/aviso-de-privacidad"
+                        class="text-base font-medium text-gray-900 hover:text-gray-700"
+                        {{ currentPageAria }}
+                    >
+                        Aviso de Privacidad
+                    </a>
                 </div>
             </div>
         </div>

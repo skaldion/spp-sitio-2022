@@ -57,6 +57,12 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
+  eleventyConfig.addCollection("condicionesSorted", function(collectionApi) {
+    return collectionApi
+        .getFilteredByTag('condiciones')
+        .sort(ascendingByOrderNumber)
+  })
+
   eleventyConfig.addCollection("segurosSorted", function(collectionApi) {
     return collectionApi
       .getFilteredByTag('seguros')
