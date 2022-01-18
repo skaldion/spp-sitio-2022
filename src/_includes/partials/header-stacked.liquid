@@ -1,0 +1,356 @@
+<!-- This example requires Tailwind CSS v2.0+ -->
+<header
+    class="bg-{{ settings.highlightColor }}-600"
+    x-data="{segurosActive: false, segurosMobileActive: false, condicionesActive: false}"
+>
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
+        <div class="w-full py-6 flex items-center justify-between sm:border-b sm:border-{{ settings.highlightColor }}-500">
+            <div class="flex items-center">
+                <a href="/">
+                    <span class="sr-only">SPP Seguros</span>
+                    {{ settings.companyLogo }}
+                </a>
+            </div>
+            <div class="flex space-x-4">
+                <div class="ml-10">
+                    <a href="#" class="inline-block bg-white py-2 px-4 border border-transparent rounded-md text-base font-medium text-{{ settings.highlightColor }}-600 hover:bg-{{ settings.highlightColor }}-50">Contáctanos</a>
+                </div>
+                <div class="sm:hidden" data-role="mobile-menu-toggle">
+                    <button
+                            type="button"
+                            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-{{ settings.highlightColor }}-500"
+                            @click="segurosMobileActive = true"
+                            :aria-expanded="segurosMobileActive ? 'true' : 'false'"
+                    >
+                        <span class="sr-only">Open menu</span>
+                        <!-- Heroicon name: outline/menu -->
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 flex-wrap justify-between space-x-6 hidden sm:flex">
+            <div class="flex space-x-6">
+                <div class="relative">
+                    <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
+                    <button
+                            @click="segurosActive = !segurosActive"
+                            @click.away="segurosActive = false"
+                            type="button"
+                            class="group rounded-md inline-flex items-center text-base font-medium hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-{{ settings.highlightColor }}-500"
+                            :class="segurosActive ? 'text-gray-300' : 'text-white'"
+                            aria-expanded="segurosActive ? 'true' : 'false'"
+                    >
+                        <span class="p-1">Seguros</span>
+                        <!--
+                          Heroicon name: solid/chevron-down
+
+                          Item active: "text-gray-600", Item inactive: "text-gray-400"
+                        -->
+                        <svg
+                                class="ml-2 h-5 w-5 group-hover:text-gray-400"
+                                :class="segurosActive ? 'text-gray-300' : 'text-white'"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                aria-hidden="true"
+                        >
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+
+                    <!--~
+                          'Solutions' flyout menu, show/hide based on flyout menu state.
+
+                          Entering: "transition ease-out duration-200"
+                            From: "opacity-0 translate-y-1"
+                            To: "opacity-100 translate-y-0"
+                          Leaving: "transition ease-in duration-150"
+                            From: "opacity-100 translate-y-0"
+                            To: "opacity-0 translate-y-1"
+                        -->
+                    <div
+                            class="absolute z-10 -ml-4 mt-3 transform w-screen max-w-md lg:max-w-2xl"
+                            x-show="segurosActive"
+                            x-transition:enter="transition ease-out duration-200"
+                            x-transition:enter-start="transform opacity-0 translate-y-1"
+                            x-transition:enter-end="transform opacity-100 translate-y-0"
+                            x-transition:leave="transition ease-in duration-150"
+                            x-transition:leave-start="transform opacity-100 translate-y-0"
+                            x-transition:leave-end="transform opacity-0 translate-y-1"
+                            x-cloak
+                    >
+                        <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                            <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
+                                {% for seguro in collections.segurosSorted %}
+
+                                    {% if page.url == seguro.url %}
+                                        {% assign currentPageAria = 'aria-current="page"' %}
+                                        {% assign currentPageClass = 'bg-blue-100' %}
+                                    {% else %}
+                                        {% assign currentPageAria = '' %}
+                                        {% assign currentPageClass = '' %}
+                                    {% endif %}
+
+                                    <a href="{{ seguro.url }}" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                                        <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-{{ settings.highlightColor }}-500 text-white sm:h-12 sm:w-12">
+                                            <!-- Heroicon name: outline/chart-bar -->
+                                            {{icons.materialIcons[seguro.data.iconName]}}
+                                        </div>
+                                        <div class="ml-4">
+                                            <p class="text-base font-medium text-gray-900">
+                                                {{ seguro.data.title }}
+                                            </p>
+                                            <p class="mt-1 text-sm text-gray-500">
+                                                {{ seguro.data.menuPreview }}
+                                            </p>
+                                        </div>
+                                    </a>
+                                {% endfor %}
+                            </div>
+                            <div class="p-5 bg-gray-50 sm:p-8">
+                                <a href="#" class="-m-3 p-3 flow-root rounded-md hover:bg-gray-100">
+                                    <div class="flex items-center">
+                                        <div class="text-base font-medium text-gray-900">
+                                            ¿Tienes preguntas sobre nuestros seguros?
+                                        </div>
+                                    </div>
+                                    <p class="mt-1 text-sm text-gray-500">
+                                        Da click aquí para ponerte en contacto con uno de nuestros especialistas.
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
+                    <button
+                            @click="condicionesActive = !condicionesActive"
+                            @click.away="condicionesActive = false"
+                            type="button"
+                            class="group rounded-md inline-flex items-center text-base font-medium hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-{{ settings.highlightColor }}-500"
+                            :class="segurosActive ? 'text-gray-300' : 'text-white'"
+                            aria-expanded="condicionesActive ? 'true' : 'false'"
+                    >
+                        <span class="p-1">Condiciones</span>
+                        <!--
+                          Heroicon name: solid/chevron-down
+
+                          Item active: "text-gray-600", Item inactive: "text-gray-400"
+                        -->
+                        <svg
+                                class="ml-2 h-5 w-5 group-hover:text-gray-400"
+                                :class="condicionesActive ? 'text-gray-300' : 'text-white'"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                aria-hidden="true"
+                        >
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+
+                    <!--~
+                          'Solutions' flyout menu, show/hide based on flyout menu state.
+
+                          Entering: "transition ease-out duration-200"
+                            From: "opacity-0 translate-y-1"
+                            To: "opacity-100 translate-y-0"
+                          Leaving: "transition ease-in duration-150"
+                            From: "opacity-100 translate-y-0"
+                            To: "opacity-0 translate-y-1"
+                        -->
+                    <div
+                            class="absolute z-10 -ml-4 mt-3 transform w-screen max-w-md lg:max-w-2xl"
+                            x-show="condicionesActive"
+                            x-transition:enter="transition ease-out duration-200"
+                            x-transition:enter-start="transform opacity-0 translate-y-1"
+                            x-transition:enter-end="transform opacity-100 translate-y-0"
+                            x-transition:leave="transition ease-in duration-150"
+                            x-transition:leave-start="transform opacity-100 translate-y-0"
+                            x-transition:leave-end="transform opacity-0 translate-y-1"
+                            x-cloak
+                    >
+                        <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                            <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
+                                {% for condicion in collections.condicionesSorted %}
+
+                                    {% if page.url == condicion.url %}
+                                        {% assign currentPageAria = 'aria-current="page"' %}
+                                        {% assign currentPageClass = 'bg-blue-100' %}
+                                    {% else %}
+                                        {% assign currentPageAria = '' %}
+                                        {% assign currentPageClass = '' %}
+                                    {% endif %}
+
+                                    <a href="{{ condicion.url }}" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                                        <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-{{ settings.highlightColor }}-500 text-white sm:h-12 sm:w-12">
+                                            <!-- Heroicon name: outline/chart-bar -->
+                                            {{icons.materialIcons[condicion.data.iconName]}}
+                                        </div>
+                                        <div class="ml-4">
+                                            <p class="text-base font-medium text-gray-900">
+                                                {{ condicion.data.title }}
+                                            </p>
+                                            <p class="mt-1 text-sm text-gray-500">
+                                                {{ condicion.data.menuPreview }}
+                                            </p>
+                                        </div>
+                                    </a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="flex space-x-6">
+                <a href="/nosotros" class="text-base font-medium text-white hover:text-{{ settings.highlightColor }}-50">
+                    Nosotros
+                </a>
+
+                <a href="/aviso-de-privacidad" class="text-base font-medium text-white hover:text-{{ settings.highlightColor }}-50">
+                    Aviso de Privacidad
+                </a>
+            </div>
+        </div>
+        <!--
+             Mobile menu, show/hide based on mobile menu state.
+
+             Entering: "duration-200 ease-out"
+               From: "opacity-0 scale-95"
+               To: "opacity-100 scale-100"
+             Leaving: "duration-100 ease-in"
+               From: "opacity-100 scale-100"
+               To: "opacity-0 scale-95"
+        -->
+        <div
+            data-role="mobile-menu"
+            class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden z-10"
+            x-show="segurosMobileActive"
+            x-transition:enter="transition ease-out duration-200"
+            x-transition:enter-start="transform opacity-0 scale-95"
+            x-transition:enter-end="transform opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-100"
+            x-transition:leave-start="transform opacity-100 scale-100"
+            x-transition:leave-end="transform opacity-0 scale-95"
+            x-cloak
+        >
+            <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+                <div class="pt-5 pb-6 px-5">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            {{ settings.companyLogo }}
+                        </div>
+                        <div class="-mr-2">
+                            <button
+                                    @click="segurosMobileActive = false"
+                                    type="button"
+                                    class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-{{ settings.highlightColor }}-500"
+                            >
+                                <span class="sr-only">Close menu</span>
+                                <!-- Heroicon name: outline/x -->
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <nav class="grid grid-cols-1 gap-7">
+                            {% for seguro in collections.segurosSorted %}
+
+                                {% if page.url == seguro.url %}
+                                    {% assign currentPageAria = 'aria-current="page"' %}
+                                    {% assign currentPageClass = 'bg-blue-100' %}
+                                {% else %}
+                                    {% assign currentPageAria = '' %}
+                                    {% assign currentPageClass = '' %}
+                                {% endif %}
+
+                                <a href="{{ seguro.url }}" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                                    <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-{{ settings.highlightColor }}-500 text-white sm:h-12 sm:w-12">
+                                        <!-- Heroicon name: outline/chart-bar -->
+                                        {{icons.materialIcons[seguro.data.iconName]}}
+                                    </div>
+                                    <div class="ml-4">
+                                        <p class="text-base font-medium text-gray-900">
+                                            {{ seguro.data.title }}
+                                        </p>
+                                        <p class="mt-1 text-sm text-gray-500">
+                                            {{ seguro.data.menuPreview }}
+                                        </p>
+                                    </div>
+                                </a>
+                            {% endfor %}
+                            {% for condicion in collections.condicionesSorted %}
+
+                                {% if page.url == condicion.url %}
+                                    {% assign currentPageAria = 'aria-current="page"' %}
+                                    {% assign currentPageClass = 'bg-blue-100' %}
+                                {% else %}
+                                    {% assign currentPageAria = '' %}
+                                    {% assign currentPageClass = '' %}
+                                {% endif %}
+
+                                <a href="{{ condicion.url }}" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                                    <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-{{ settings.highlightColor }}-500 text-white sm:h-12 sm:w-12">
+                                        <!-- Heroicon name: outline/chart-bar -->
+                                        {{icons.materialIcons[condicion.data.iconName]}}
+                                    </div>
+                                    <div class="ml-4">
+                                        <p class="text-base font-medium text-gray-900">
+                                            {{ condicion.data.title }}
+                                        </p>
+                                        <p class="mt-1 text-sm text-gray-500">
+                                            {{ condicion.data.menuPreview }}
+                                        </p>
+                                    </div>
+                                </a>
+                            {% endfor %}
+                        </nav>
+                    </div>
+                </div>
+                <div class="py-6 px-5">
+                    <div class="grid grid-cols-2 gap-4">
+                        {% for navPage in collections.pagesSorted %}
+
+                            {% if page.url == navPage.url %}
+                                {% assign currentPageAria = 'aria-current="page"' %}
+                                {% assign currentPageClass = 'bg-blue-100' %}
+                            {% else %}
+                                {% assign currentPageAria = '' %}
+                                {% assign currentPageClass = '' %}
+                            {% endif %}
+
+                            <a
+                                    href="{{ navPage.url }}"
+                                    class="{{currentPageClass}} text-base font-medium text-gray-900 hover:text-gray-700"
+                                    {{ currentPageAria }}
+                            >
+                                {{ navPage.data.title }}
+                            </a>
+                        {% endfor %}
+                        {% if page.url == "/aviso-de-privacidad" %}
+                            {% assign currentPageAria = 'aria-current="page"' %}
+                        {% else %}
+                            {% assign currentPageAria = '' %}
+                        {% endif %}
+                        <a
+                            href="/aviso-de-privacidad"
+                            class="text-base font-medium text-gray-900 hover:text-gray-700"
+                            {{ currentPageAria }}
+                        >
+                            Aviso de Privacidad
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
