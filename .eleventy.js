@@ -7,16 +7,12 @@ const ascendingByOrderNumber = (a, b) => a.data.order - b.data.order
 const descendingByDate = (a, b) => {
   const d1 = DateTime.fromJSDate(a.date)
   const d2 = DateTime.fromJSDate(b.date)
-  console.log('plop', a.date)
   if (d2 < d1) {
-    console.log('d2 < d1', d2, d1)
     return -1
   }
   if (d2 > d1) {
-    console.log('d2 > d1', d2, d1)
     return 1
   }
-  console.log('d2 == d1', d2, d1)
   return 0
 }
 

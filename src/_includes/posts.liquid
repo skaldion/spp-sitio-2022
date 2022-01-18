@@ -1,0 +1,29 @@
+---
+layout: default
+prism: true
+---
+
+<div class="container max-w-4xl mt-6  px-6">
+    <div class="border-b border-gray-100 pt-10">
+        <h1 class="mb-3">{{title}}</h1>
+        <p class="text-base leading-6 font-medium text-gray-500">
+            <time>{{ date }} escrito por {{ author }}</time>
+        </p>
+
+    </div>
+    <article class="prose lg:prose-xl my-4">
+        {{ content | safe }}
+    </article>
+
+</div>
+{% include ./partials/blog-sections/latestPosts
+    title:"Publicaciones Recientes"
+    intro:"Mantente siempre informado con nuestros artículos."
+%}
+{% include ./partials/cta-sections/brand-panel-with-overlapping-image.html,
+    image:"/static/img/3a.avif"
+    alt:""
+    title:"Da el siguiente paso"
+    paragraph:"Podemos ser tu mejor aliado en cuestión de seguros, tenemos el producto a la medida para tus necesidades."
+    button:"Contáctanos"
+%}
