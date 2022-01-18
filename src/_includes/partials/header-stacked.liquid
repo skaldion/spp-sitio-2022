@@ -13,7 +13,12 @@
             </div>
             <div class="flex space-x-4">
                 <div class="ml-10">
-                    <a href="#" class="inline-block bg-white py-2 px-4 border border-transparent rounded-md text-base font-medium text-{{ settings.highlightColor }}-600 hover:bg-{{ settings.highlightColor }}-50">Contáctanos</a>
+                    <a
+                        href="{{ settings.contactoDeepLink }}"
+                        class="inline-block bg-white py-2 px-4 border border-transparent rounded-md text-base font-medium text-{{ settings.highlightColor }}-600 hover:bg-{{ settings.highlightColor }}-50"
+                    >
+                        Contáctanos
+                    </a>
                 </div>
                 <div class="sm:hidden" data-role="mobile-menu-toggle">
                     <button
