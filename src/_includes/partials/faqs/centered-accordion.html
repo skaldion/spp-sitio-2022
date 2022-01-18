@@ -1,7 +1,7 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="bg-indigo-700">
+<div class="bg-{{ settings.highlightColor }}-700">
     <div class="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
-        <div class="max-w-3xl mx-auto divide-y-2 divide-indigo-300">
+        <div class="max-w-3xl mx-auto divide-y-2 divide-{{ settings.highlightColor }}-300">
             <h2 class="text-center text-3xl font-extrabold text-white sm:text-4xl">
                 {{title}}
             </h2>
@@ -29,7 +29,7 @@
                         </button>
                     </dt>
                     <dd class="mt-2 pr-12" id="faq-0">
-                        <p class="text-base text-indigo-200">
+                        <p class="text-base text-{{ settings.highlightColor }}-200">
                             {{question.answer}}
                         </p>
                     </dd>

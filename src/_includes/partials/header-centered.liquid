@@ -13,7 +13,7 @@
         <div class="-mr-2 -my-2 md:hidden">
             <button
                 type="button"
-                class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-{{ settings.highlightColor }}-500"
                 @click="segurosMobileActive = true"
                 :aria-expanded="segurosMobileActive ? 'true' : 'false'"
             >
@@ -31,7 +31,7 @@
                     @click="segurosActive = !segurosActive"
                     @click.away="segurosActive = false"
                     type="button"
-                    class="group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    class="group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-{{ settings.highlightColor }}-500"
                     :class="segurosActive ? 'text-gray-900' : 'text-gray-500'"
                     aria-expanded="segurosActive ? 'true' : 'false'"
                 >
@@ -87,7 +87,7 @@
                                 {% endif %}
 
                                 <a href="{{ seguro.url }}" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
-                                    <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
+                                    <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-{{ settings.highlightColor }}-500 text-white sm:h-12 sm:w-12">
                                         <!-- Heroicon name: outline/chart-bar -->
                                         {{icons.materialIcons[seguro.data.iconName]}}
                                     </div>
@@ -149,7 +149,7 @@
             </a>
             <a
                 href="{{ settings.contactoDeepLink }}"
-                class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+                class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-{{ settings.highlightColor }}-600 hover:bg-{{ settings.highlightColor }}-700"
                 {% if page.url == settings.contactoURL %}
                     aria-current="page"
                 {% endif %}
@@ -191,7 +191,7 @@
                         <button
                             @click="segurosMobileActive = false"
                             type="button"
-                            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-{{ settings.highlightColor }}-500"
                         >
                             <span class="sr-only">Close menu</span>
                             <!-- Heroicon name: outline/x -->
@@ -214,7 +214,7 @@
                             {% endif %}
 
                             <a href="{{ seguro.url }}" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
-                                <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
+                                <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-{{ settings.highlightColor }}-500 text-white sm:h-12 sm:w-12">
                                     <!-- Heroicon name: outline/chart-bar -->
                                     {{icons.materialIcons[seguro.data.iconName]}}
                                 </div>

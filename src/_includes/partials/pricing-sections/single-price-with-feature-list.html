@@ -5,15 +5,15 @@
             <div>
                 <h1 class="text-4xl font-extrabold sm:text-5xl sm:tracking-tight">
                     <span class="text-gray-900">{{main_title}}</span>
-                    <span class="text-indigo-600">{{main_title_extra}}</span>
+                    <span class="text-{{ settings.highlightColor }}-600">{{main_title_extra}}</span>
                 </h1>
                 <p class="mt-5 text-xl text-gray-500">{{main_paragraph}}</p>
             </div>
-            <a href="#" class="mt-8 w-full bg-indigo-600 border border-transparent px-5 py-3 inline-flex items-center justify-center text-base font-medium rounded-md text-white hover:bg-indigo-700 sm:mt-10 sm:w-auto xl:mt-0">{{button}}</a>
+            <a href="#" class="mt-8 w-full bg-{{ settings.highlightColor }}-600 border border-transparent px-5 py-3 inline-flex items-center justify-center text-base font-medium rounded-md text-white hover:bg-{{ settings.highlightColor }}-700 sm:mt-10 sm:w-auto xl:mt-0">{{button}}</a>
         </div>
         <div class="border-t border-gray-200 pt-16 xl:grid xl:grid-cols-3 xl:gap-x-8">
             <div>
-                <h2 class="text-base font-semibold text-indigo-600 tracking-wide uppercase">{{highlight_1}}</h2>
+                <h2 class="text-base font-semibold text-{{ settings.highlightColor }}-600 tracking-wide uppercase">{{highlight_1}}</h2>
                 <p class="mt-2 text-3xl font-extrabold text-gray-900">{{title_1}}</p>
                 <p class="mt-4 text-lg text-gray-500">{{paragraph_1}}</p>
             </div>

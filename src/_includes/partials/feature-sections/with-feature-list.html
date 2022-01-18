@@ -2,7 +2,7 @@
 <div class="bg-white">
     <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
         <div>
-            <h2 class="text-base font-semibold text-indigo-600 uppercase tracking-wide">{{highlight}}</h2>
+            <h2 class="text-base font-semibold text-{{ settings.highlightColor }}-600 uppercase tracking-wide">{{highlight}}</h2>
             <p class="mt-2 text-3xl font-extrabold text-gray-900">{{main_title}}</p>
             <p class="mt-4 text-lg text-gray-500">{{main_paragraph}}</p>
         </div>
@@ -13,7 +13,7 @@
                     <dt>
                         <!-- Heroicon name: outline/check -->
                         <div class="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
-                            <a href="#" class="text-xl font-medium text-indigo-700 hover:text-indigo-600">{{conwi.title}}</a>
+                            <a href="#" class="text-xl font-medium text-{{ settings.highlightColor }}-700 hover:text-{{ settings.highlightColor }}-600">{{conwi.title}}</a>
                         </div>
                     </dt>
                     <dd class="mt-2 ml-9 pt-0.5 text-base text-gray-500">
