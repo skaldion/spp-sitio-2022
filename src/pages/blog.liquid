@@ -1,42 +1,21 @@
 ---
 layout: default
 title: Blog
-permalink: 'blog/index.html'
+permalink: 'posts/index.html'
 order: 2
 eleventyExcludeFromCollections: true
 ---
-<section class="mt-15">
-    {% for post in collections.post %}
-        <article class="my-8">
-            <h2 class="font-bold text-3xl text-gray-900 mb-2">
-                <a href="{{ post.url | url }}">
-                    {% if post.data.title %}
-                        {{ post.data.title }}
-                    {% else %}
-                        Untitled
-                    {% endif %}
-                </a>
-            </h2>
-            <p class="text-base leading-6 text-gray-500 mb-3">
-                <time>
-                    {{ post.date | readableDate }}
-                    by
-                    <a>{{ post.data.author }}</a>
 
-                </time>
-            </p>
-            {% if post.data.description %}
-                <p class="text-lg text-gray-500 mb-3">
-                    {{ post.data.description }}
-                </p>
-            {% endif %}
+{% include ../_includes/partials/blog-sections/three-column-cards
+    title:"Blog"
+    intro:"SPP Seguros te mantiene al día con todo lo relacionado a seguros."
+    posts: collections.post
+%}
 
-            <p>
-                <a href="{{ post.url | url }}" class="text-indigo-500 font-bold text-lg">
-                    Read more →
-                </a>
-            </p>
-
-        </article>
-    {% endfor %}
-</section>
+{% include ../_includes/partials/cta-sections/brand-panel-with-overlapping-image.html,
+    image:"/static/img/3a.avif"
+    alt:"Gerente dando una presentación fauxels"
+    title:"Da el siguiente paso"
+    paragraph:"Podemos ser tu mejor aliado en cuestión de seguros, tenemos el producto a la medida para tus necesidades."
+    button:"Contáctanos"
+%}
