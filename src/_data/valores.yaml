@@ -1,14 +1,20 @@
 ---
 items:
-  - title: Satisfacción
+  - iconName: satisfaccion
+    title: Satisfacción
     para: Buscamos siempre dar lo mejor de nosotros para satisfacer las necesidades de nuestros clientes.
-  - title: Ética
+  - iconName: etica
+    title: Ética
     para: Es base para nuestro trabajo día a día y para conducirnos de la mejor manera en el mismo.
-  - title: Responsabilidad
+  - iconName: responsabilidad
+    title: Responsabilidad
     para: Todo nuestro trabajo y procesos los hacemos de esta manera ya que sabemos que involucra lo más valioso para nosotros que son los clientes.
-  - title: Virtud
+  - iconName: virtud
+    title: Virtud
     para: El compromiso con brindar la mejor calidad por ensima del beneficio personal es nuestra mayor tarea.
-  - title: Iniciativa
+  - iconName: iniciativa
+    title: Iniciativa
     para: Buscamos siempre ser proactivos e innovar en nuestra industria.
-  - title: Respeto
+  - iconName: respeto
+    title: Respeto
     para: Nos manejamos siempre con respeto a todas las entidades con las que interactuamos y con nuestro medio.
