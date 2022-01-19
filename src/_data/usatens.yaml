@@ -4,7 +4,7 @@ items:
     title: Blog
     para: Buscamos siempre dar lo mejor de nosotros para satisfacer las necesidades de nuestros clientes.
     button: Conoce Más
-    url: "/posts/"
+    url: "/blog/"
   - iconName: support
     title: Atención a Cliente
     para: Es base para nuestro trabajo día a día y para conducirnos de la mejor manera en el mismo.

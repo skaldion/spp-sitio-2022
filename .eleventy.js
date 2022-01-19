@@ -71,7 +71,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection("latestPosts", function(collectionApi) {
     return collectionApi
-        .getFilteredByTag('post')
+        .getFilteredByTag('blog')
         .sort(descendingByDate)
         .filter((item, index) => index < 3)
   })
