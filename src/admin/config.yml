@@ -1,6 +1,7 @@
 backend:
   # Use netlify identity as backend
   name: git-gateway
+  repo: skaldion/spp-sitio-2022
   branch: publishing
   ### enable below lines for github integration ###
   # name: github
