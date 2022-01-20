@@ -13,20 +13,14 @@ order: 1
     main_paragraph:"Establecen la forma en que se puede utilizar tu producto, servicio o contenido de forma legalmente vinculante. Son cruciales para proteger tu contenido desde una perspectiva de derechos de autor, así como para protegerlo de posibles responsabilidades."
 %}
 
-{% include ../_includes/partials/feature-sections/with-feature-list.html,
-    highlight:"Condiciones de Daños"
-    main_title:"Diversos Misceláneos"
-    main_paragraph:""
-
-    condiciones: condiciones.DM
-
+{% include ../_includes/partials/headers/simple-centered.html,
+highlight:"Descarga las condiciones necesarias"
+        title:"Diversos Misceláneos"
+        paragraph:""
 %}
 
-{% include ../_includes/partials/feature-sections/with-feature-list.html,
-    highlight:"Condiciones de Daños"
-    main_title:"Diversos Técnicos"
-    main_paragraph:""
-
-    condiciones: condiciones.DT
-
+{% include ../_includes/partials/lists/horizontal-link-cards,
+    title:"Garantía Hogar Público Infonavit"
+    description:""
+    items: docs.condiciones.GHPI
 %}
