@@ -385,3 +385,11 @@ APer:
   - title: "Solicitud Reclamación AP-SPP"
     description: ""
     url: "/static/docs/Solicitud_de_reclamo_APSPP.pdf"
+
+CDS:
+  - title: "Desarrolladores - Seguro de Calidad"
+    description: ""
+    url: "/static/img/cds1.jpg"
+  - title: "Seguros SPP IS"
+    description: ""
+    url: "/static/img/cds2.jpg"
