@@ -372,3 +372,16 @@ APCM:
   - title: "Carátula de Póliza"
     description: ""
     url: "/static/docs/Caratula_AP_Multiple.pdf"
+
+GH:
+  - title: "Solicitud Reclamación Garantía Hogar Público"
+    description: ""
+    url: "/static/docs/Carta-reclamacion-garantia-hogar-publico.pdf"
+  - title: "Solicitud Reclamación Garantía Hogar Privado"
+    description: ""
+    url: "/static/docs/Carta-reclamacion-garantia-hogar-privados.pdf"
+
+APer:
+  - title: "Solicitud Reclamación AP-SPP"
+    description: ""
+    url: "/static/docs/Solicitud_de_reclamo_APSPP.pdf"
