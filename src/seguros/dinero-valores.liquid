@@ -1,0 +1,63 @@
+---
+title: 'Dinero y Valores'
+previewImage: 'https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg'
+previewImageAlt: ''
+previewDescription: 'Otorgamos cobertura contra la pérdida de dinero en toda propiedad del asegurado o propiedad de terceros bajo responsabilidad.'
+menuPreview: 'Protege dinero y valores contra pérdida o robo, dentro o fuera de la propiedad.'
+iconName: money
+order: 12
+footerOrder: 12
+---
+
+{% include ../_includes/partials/headers/simple-centered.html,
+    highlight:"Apto para pequeñas y grandes empresas"
+    title:"Seguro de Dinero y Valores"
+    paragraph:""
+%}
+
+{% include ../_includes/partials/stats/split-with-image.html,
+    iconName:"money"
+    image:"/static/img/1p.avif"
+    alt:"Un monton de monedas"
+    mainTitle:"¿Qué es el seguro de Dinero y Valores?"
+    contentHTML: '
+    <p>Es un seguro que otorga cobertura contra la pérdida de dinero en efectivo, en monedas o billetes de banco, valores y otros documentos negociables y no negociables, letras de cambio, pagarés, cheques, acciones, bonos financieros, bonos hipotecarios o de ahorro, toda propiedad del asegurado o propiedad de terceros bajo responsabilidad.</p>
+    <h3>¿Cuál es el Alcance de la Cobertura?</h3>
+    <p>Se protegen los bienes asegurados contra pérdida o robo de estos; la protección aplica cuando están dentro de las oficinas del asegurado o fuera de ellas, por ejemplo, cuando están siendo transportados para depositarse en algún banco y el vehículo se accidenta.</p>
+    '
+%}
+
+{% include ../_includes/partials/pricing-sections/single-price-with-feature-list.html,
+    main_title:"Contrata tu "
+    main_title_extra:"Seguro de Dinero y Valores"
+    main_paragraph:"Nuestros expertos te guiarán por el proceso de contratación."
+    button:"Atención a Cliente"
+    highlight_1:"Todo lo que necesitas"
+    title_1:"¿Qué cubre nuestro seguro? "
+    paragraph_1:""
+    seronepris: seronepris.DYV
+%}
+
+{% include ../_includes/partials/stats/split-with-image-reversed.liquid,
+    iconName:""
+    image:"/static/img/2p.avif"
+    alt:"Una cartera con dinero"
+    mainTitle:"¿Cuáles son las ventajas de adquirir este seguro con SPP?"
+    contentHTML: '
+    <ul role="list">
+    <li>Tarifa Zonificada.</li>
+    <li>Cobertura que puedes considerar en exceso de tu póliza múltiple empresarial.</li>
+    <li>No requerimos primas de apoyo.</li>
+    </ul>
+    '
+%}
+
+{% include ../_includes/partials/cta-sections/split-with-image.html,
+    image:"/static/img/3p.avif"
+    alt:"Monedas acomuladas y un reloj"
+    highlight:"Tu tienes una visión"
+    title:"Nosotros tenemos una manera de llevarte allí con toda seguridad."
+    paragraph:""
+    button_1:"Contáctanos"
+        buttonURL: "/contacto/#contact-form"
+%}
