@@ -7,17 +7,44 @@ order: 2
 ---
 
 {% include ../_includes/partials/headers/branded-with-background-image.html,
-    image:"/static/img/1o.avif"
-    alt:"Persona haciendo anotaciones tirachard kumtanom"
-    main_title:"Condiciones de Accidentes y Enfermedades"
-    main_paragraph:"Establecen la forma en que se puede utilizar tu producto, servicio o contenido de forma legalmente vinculante. Son cruciales para proteger tu contenido desde una perspectiva de derechos de autor, así como para protegerlo de posibles responsabilidades."
+image:"/static/img/1o.avif"
+        alt:"Persona haciendo anotaciones tirachard kumtanom"
+        main_title:"Condiciones de Accidentes y Enfermedades"
+        main_paragraph:"Establecen la forma en que se puede utilizar tu producto, servicio o contenido de forma legalmente vinculante. Son cruciales para proteger tu contenido desde una perspectiva de derechos de autor, así como para protegerlo de posibles responsabilidades."
 %}
 
-{% include ../_includes/partials/feature-sections/with-feature-list.html,
-    highlight:"Condiciones de Accidentes y Enfermedades"
-    main_title:"Accidentes Personales"
-    main_paragraph:""
+{% include ../_includes/partials/headers/simple-centered.html,
+highlight:"Descarga las condiciones necesarias"
+        title:"Accidentes Personales"
+        paragraph:""
+%}
 
-    condiciones: condiciones.AP
+{% include ../_includes/partials/lists/horizontal-link-cards,
+title:"Básico Estandarizado Accidentes Personales"
+        description:""
+        items: docs.condiciones.BEAP
+%}
 
+{% include ../_includes/partials/lists/horizontal-link-cards,
+title:"Accidentes Personales"
+        description:""
+        items: docs.condiciones.AP
+%}
+
+{% include ../_includes/partials/lists/horizontal-link-cards,
+title:"AP Colectivo"
+        description:""
+        items: docs.condiciones.APC
+%}
+
+{% include ../_includes/partials/lists/horizontal-link-cards,
+title:"AP Escolar"
+        description:""
+        items: docs.condiciones.APE
+%}
+
+{% include ../_includes/partials/lists/horizontal-link-cards,
+title:"AP Colectivo Múltiple"
+        description:""
+        items: docs.condiciones.APCM
 %}

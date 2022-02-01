@@ -13,20 +13,80 @@ order: 1
     main_paragraph:"Establecen la forma en que se puede utilizar tu producto, servicio o contenido de forma legalmente vinculante. Son cruciales para proteger tu contenido desde una perspectiva de derechos de autor, así como para protegerlo de posibles responsabilidades."
 %}
 
-{% include ../_includes/partials/feature-sections/with-feature-list.html,
-    highlight:"Condiciones de Daños"
-    main_title:"Diversos Misceláneos"
-    main_paragraph:""
-
-    condiciones: condiciones.DM
-
+{% include ../_includes/partials/headers/simple-centered.html,
+highlight:"Descarga las condiciones necesarias"
+        title:"Diversos Misceláneos"
+        paragraph:""
 %}
 
-{% include ../_includes/partials/feature-sections/with-feature-list.html,
-    highlight:"Condiciones de Daños"
-    main_title:"Diversos Técnicos"
-    main_paragraph:""
+{% include ../_includes/partials/lists/horizontal-link-cards,
+    title:"Garantía Hogar Público Infonavit"
+    description:""
+    items: docs.condiciones.GHPI
+%}
 
-    condiciones: condiciones.DT
+{% include ../_includes/partials/lists/horizontal-link-cards,
+title:"Garantía Hogar Público"
+        description:""
+        items: docs.condiciones.GHP
+%}
 
+{% include ../_includes/partials/lists/horizontal-link-cards,
+title:"Garantía Hogar Público Uno"
+        description:""
+        items: docs.condiciones.GHPU
+%}
+
+{% include ../_includes/partials/lists/horizontal-link-cards,
+title:"Garantía Hogar Privado"
+        description:""
+        items: docs.condiciones.GHPri
+%}
+
+{% include ../_includes/partials/lists/horizontal-link-cards,
+title:"Garantía Construcción Civil"
+        description:""
+        items: docs.condiciones.GCC
+%}
+
+{% include ../_includes/partials/headers/simple-centered.html,
+highlight:"Descarga las condiciones necesarias"
+        title:"Diversos Técnicos"
+        paragraph:""
+%}
+
+{% include ../_includes/partials/lists/horizontal-link-cards,
+title:"Obra Civil Premier"
+        description:""
+        items: docs.condiciones.OCP
+%}
+
+{% include ../_includes/partials/lists/horizontal-link-cards,
+title:"Equipo de Contratistas"
+        description:""
+        items: docs.condiciones.EDC
+%}
+
+{% include ../_includes/partials/lists/horizontal-link-cards,
+title:"Rotura de Maquinaria"
+        description:""
+        items: docs.condiciones.RDM
+%}
+
+{% include ../_includes/partials/lists/horizontal-link-cards,
+title:"Equipo Electrónico"
+        description:""
+        items: docs.condiciones.EE
+%}
+
+{% include ../_includes/partials/lists/horizontal-link-cards,
+title:"Equipo Electrónico (Incluye Paneles)"
+        description:""
+        items: docs.condiciones.EEIP
+%}
+
+{% include ../_includes/partials/lists/horizontal-link-cards,
+title:"Riesgos Cibernéticos"
+        description:""
+        items: docs.condiciones.RC
 %}

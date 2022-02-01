@@ -6,7 +6,7 @@ OC:
   - Daños causados directamente por el contratista a la obra con motivo de la ejecución de los trabajos a que le obliga el contrato de mantenimiento.
   - Responsabilidad Civil por daños materiales.
   - Responsabilidad Civil por daños morales.
-  - Remoción de Escombros
+  - Remoción de Escombros.
 
 EDC:
   - Incendio, rayo y explosión, varada, hundimiento o colisión de la embarcación de transbordo fluvial de servicio regular en que los bienes asegurados fueren transportados, incluyendo las caídas y colisiones durante las maniobras de carga y descarga, comprendiendo la contribución por avería gruesa o por cargos de salvamento que será pagada según las disposiciones del Código de Comercio Mexicano y de la Ley de Navegación y Comercio Marítimo.
@@ -17,36 +17,36 @@ EDC:
   - Derrumbe, deslave, hundimiento, deslizamiento del terreno y salud.
   - Ciclón, tornado, vendaval, huracán, granizo.
   - Temblor, terremoto, erupción volcánica.
-  - Huelgas y Alborotos Populares
-  - Todo Riesgo por Daño Físico
-  - Gastos Extraordinarios
+  - Huelgas y Alborotos Populares.
+  - Todo Riesgo por Daño Físico.
+  - Gastos Extraordinarios.
   - Incendio y/o rayo.
   - Explosión.
   - Inundación.
 
 VO:
-  - Estructura
+  - Estructura.
   - Instalaciones (Hidrosanitarias, Eléctricas, Gas).
   - Impermeabilización.
   - Acabados *sólo en casos especiales.
   - Remoción de escombros.
   - Gastos Extraordinarios de Siniestro.
   - Acabados Especiales.
-  - Instalaciones Especiales
+  - Instalaciones Especiales.
 
 GHPI:
   - Daños Estructurales (Durante un periodo de 10 años).
   - Impermeabilización (Durante un periodo de 5 años).
-  - Instalaciones hidrosanitarias, eléctricas y de gas. (Durante un periodo de 2 años).
+  - Instalaciones hidrosanitarias, eléctricas y de gas (Durante un periodo de 2 años).
 
 GHPF:
-  - Daños Estructurales (Durante un periodo de 10 años)
-  - Impermeabilización (Durante un periodo de 5 años)
-  - Instalaciones hidrosanitarias, eléctricas, gas y telefónica . (Durante un periodo de 2 años)
+  - Daños Estructurales (Durante un periodo de 10 años).
+  - Impermeabilización (Durante un periodo de 5 años).
+  - Instalaciones hidrosanitarias, eléctricas, gas y telefónica (Durante un periodo de 2 años).
   - Deducible del 1% para cualquier siniestro.
 
 EE:
-  - Incendio, impacto directo o rayo, implosión, explosión, extinción de incendio,
+  - Incendio, impacto directo o rayo, implosión, explosión, extinción de incendio.
   - Humo, hollín, gases, líquidos o polvos corrosivos, acción del agua o humedad que no provengan de las condiciones atmosféricas comunes en la región.
   - Corto circuito, arco voltaico, perturbaciones por campos magnéticos, sobretensiones causadas por rayo, tostaduras de aislamiento.
   - Defectos de fabricación, de material, de diseño o instalación.
@@ -64,21 +64,21 @@ EE:
   - Daños que sobrevengan en el equipo electrónico asegurado a consecuencia de daño material en el equipo de climatización.
 
 APM:
-  - Muerte Accidental
-  - Reembolso de Gastos Médicos por Accidente
-  - Invalidez Total y Permanente (Sólo empresas)
-  - Perdidas Orgánicas (Escala A o B)
-  - Gastos Funerarios por Muerte Accidental (Indemnizatorio)
+  - Muerte Accidental.
+  - Reembolso de Gastos Médicos por Accidente.
+  - Invalidez Total y Permanente (Sólo empresas).
+  - Perdidas Orgánicas (Escala A o B).
+  - Gastos Funerarios por Muerte Accidental (Indemnizatorio).
 
 APP:
-  - Muerte Accidental
-  - Invalidez Total y Permanente
-  - Gastos Funerarios por Muerte Accidental
+  - Muerte Accidental.
+  - Invalidez Total y Permanente.
+  - Gastos Funerarios por Muerte Accidental.
 
 APE:
-  - Muerte Accidental
-  - Reembolso de Gastos Médicos por Accidente
-  - Perdidas Orgánicas (Escala A o B)
+  - Muerte Accidental.
+  - Reembolso de Gastos Médicos por Accidente.
+  - Perdidas Orgánicas (Escala A o B).
 
 RC:
   - Responsabilidad por Privacidad.
@@ -99,3 +99,13 @@ RDM:
   - Fallo en los dispositivos de regulación.
   - Tempestad, granizo, helada y deshielo.
   - Cualquier otra causa no excluida expresamente según lo dispuesto en la cláusula 4ª “Riesgos Excluidos”.
+
+DYV:
+  - Dentro del Local, en cajas fuertes o bóvedas, en cajeros automáticos de dinero, en máquinas despachadoras de productos en general, cajas registradoras o colectoras.
+  - Robo con violencia de los bienes asegurados al interior del inmueble.
+  - Pérdida o daños materiales a los bienes asegurados a consecuencia de robo por asalto o intento del mismo.
+  - Pérdidas o daños a los bienes asegurados por Incendio y explosión siempre y cuando se encuentren contenidos en cajas fuertes, bóvedas, cajas registradoras o colectoras o en cualquier lugar dentro del local asegurado.
+  - En tránsito físicamente en poder de cajeros, pagadores, cobradores o de cualquier otro empleado o funcionario, con propósito de efectuar cualquier operación propia del negocio asegurado (fuera del local).
+  - Pérdidas o daños a los bienes asegurados causados por robo, intento de robo o asalto (fuera del local).
+  - Daños o robos de los bienes asegurados atribuibles directamente a la incapacidad física de la persona encargada de su traslado (enfermedad repentina o accidente, fuera del local).
+  - Pérdidas, daños o robo que sufran los bienes asegurados a consecuencia del vehículo que los transporta sufra daños incendio, rayo, explosión, colisión, volcadura, caída, descarrilamiento, así como por hundimiento o rotura de paneles (fuera del local).
