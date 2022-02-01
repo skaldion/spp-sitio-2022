@@ -8,7 +8,8 @@
             <div class="flex items-center">
                 <a href="/">
                     <span class="sr-only">SPP Institución de Seguros S.A. de C.V.</span>
-                    {{ settings.companyLogo }}
+                    <span class="sm:hidden">{{ settings.companyLogoMobile }}</span>
+                    <span class="hidden sm:inline-block">{{ settings.companyLogo }}</span>
                 </a>
             </div>
             <div class="flex space-x-4">
