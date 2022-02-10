@@ -40,6 +40,7 @@ module.exports = {
   variants: {},
   plugins: [
       require("@tailwindcss/typography"),
-      require('@tailwindcss/aspect-ratio')
+      require('@tailwindcss/aspect-ratio'),
+      require('@tailwindcss/forms')
   ],
 };
