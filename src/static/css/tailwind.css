@@ -21,7 +21,7 @@ h3 {
 }
 
 .was-validated .validation-feedback {
-    visibility: visible;
+  visibility: visible;
 }
 
 /* Syntax Highlighting*/
