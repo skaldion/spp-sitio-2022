@@ -16,14 +16,6 @@ h3 {
   @apply pt-5 border-b-2;
 }
 
-.validation-feedback {
-  visibility: hidden;
-}
-
-.was-validated .validation-feedback {
-  visibility: visible;
-}
-
 /* Syntax Highlighting*/
 
 body :not(pre) > code[class*="language-"],
