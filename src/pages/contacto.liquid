@@ -157,7 +157,7 @@ eleventyExcludeFromCollections: true
                                         name="first-name"
                                         id="first-name"
                                         autocomplete="given-name"
-                                        class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-{{ settings.highlightColor }}-500 focus:border-{{ settings.highlightColor }}-500 border-warm-gray-300 rounded-md"
+                                        class="py-3 px-4 block w-full shadow-md text-warm-gray-900 focus:ring-{{ settings.highlightColor }}-500 focus:border-{{ settings.highlightColor }}-500 border-warm-gray-300 rounded-md"
                                         required
                                     >
                                     <div class="validation-feedback absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
@@ -174,7 +174,7 @@ eleventyExcludeFromCollections: true
                                         name="last-name"
                                         id="last-name"
                                         autocomplete="family-name"
-                                        class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-{{ settings.highlightColor }}-500 focus:border-{{ settings.highlightColor }}-500 border-warm-gray-300 rounded-md"
+                                        class="py-3 px-4 block w-full shadow-md text-warm-gray-900 focus:ring-{{ settings.highlightColor }}-500 focus:border-{{ settings.highlightColor }}-500 border-warm-gray-300 rounded-md"
                                     >
                                 </div>
                             </div>
@@ -186,7 +186,7 @@ eleventyExcludeFromCollections: true
                                         name="email"
                                         type="email"
                                         autocomplete="email"
-                                        class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-{{ settings.highlightColor }}-500 focus:border-{{ settings.highlightColor }}-500 border-warm-gray-300 rounded-md"
+                                        class="py-3 px-4 block w-full shadow-md text-warm-gray-900 focus:ring-{{ settings.highlightColor }}-500 focus:border-{{ settings.highlightColor }}-500 border-warm-gray-300 rounded-md"
                                         required
                                     >
                                     <div class="validation-feedback absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
@@ -194,6 +194,17 @@ eleventyExcludeFromCollections: true
                                     </div>
                                 </div>
                                 <p class="validation-feedback mt-2 text-sm text-red-600" id="email-error">Escribe tu dirección de correo electrónico.</p>
+                            </div>
+                            <div class="sm:col-span-2">
+                                <label for="phone" class="block text-sm font-medium text-warm-gray-900">Teléfono</label>
+                                <div class="mt-1 relative">
+                                    <input
+                                        id="phone"
+                                        name="phone"
+                                        type="tel"
+                                        class="py-3 px-4 block w-full shadow-md text-warm-gray-900 focus:ring-{{ settings.highlightColor }}-500 focus:border-{{ settings.highlightColor }}-500 border-warm-gray-300 rounded-md"
+                                    >
+                                </div>
                             </div>
                             <div class="sm:col-span-2">
                                 <div class="flex justify-between">
@@ -205,7 +216,7 @@ eleventyExcludeFromCollections: true
                                         id="message"
                                         name="message"
                                         rows="4"
-                                        class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-{{ settings.highlightColor }}-500 focus:border-{{ settings.highlightColor }}-500 border border-warm-gray-300 rounded-md"
+                                        class="py-3 px-4 block w-full shadow-md text-warm-gray-900 focus:ring-{{ settings.highlightColor }}-500 focus:border-{{ settings.highlightColor }}-500 border border-warm-gray-300 rounded-md"
                                         aria-describedby="message-max"
                                         required
                                     >
