@@ -1,5 +1,5 @@
 ---
-featuredImg: /static/img/mineria_blog.jpg
+featuredImg: /static/img/mineria_blog-min.jpg
 featuredImgAlt: Maquinaria minería transportando material
 title: México minero, pero mal asegurado
 description: Hoy día la gran mayoría de las unidades mineras opera con
@@ -23,7 +23,7 @@ Hoy día la gran mayoría de las unidades mineras opera con tecnología moderna 
 
 Con los nuevos estándares mineros de México la minería moderna es completamente diferente a la minería histórica, las empresas mineras como los profesionistas de las ciencias de la Tierra están conscientes de la gran responsabilidad que tienen de dar a conocer con claridad sus métodos de trabajo, mostrar y demostrar, por qué la minería mexicana es motivo de orgullo y es reconocida a nivel internacional.
 
-![maquinaria trabajando en mina](/static/img/mineria_blog3.jpg "maquinaria amarilla ")
+![maquinaria amarilla ](/static/img/mineria_blog3-min.jpg "maquinaria trabajando en mina")
 
 Minería a cielo abierto y Minería subterránea
 
@@ -33,7 +33,7 @@ En una mina a cielo abierto tiene el Tajo de la mina. La diferencia de la miner�
 
 La mina subterránea o bocamina; los yacimientos en el minado subterráneo por lo general se encuentran en forma de vetas y están muy alejados de la superficie.
 
-![Mina a cielo abierto](/static/img/mineria_blog2.jpg)
+![Mina a cielo abierto](/static/img/mineria_blog2-min.jpg "Mina a cielo abierto")
 
 En México y en el mundo hay una gran cantidad de minas subterráneas y minas a cielo abierto.
 
