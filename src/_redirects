@@ -1,0 +1,15 @@
+# Redirects from what the browser requests to what we serve
+/obra-civil                 /seguros/obra-civil
+/equipo-contratistas        /seguros/contratistas
+/vicios-ocultos             /seguros/vicios-ocultos
+/INFONAVIT                  /seguros/infonavit
+/FOVISSSTE                  /seguros/fovissste
+/equipo-electronico         /seguros/equipo-electronico
+/ap-multiple                /seguros/ap-multiple
+/ap-premier                 /seguros/ap-premier
+/ap-escolar                 /seguros/ap-escolar
+/ciber                      /seguros/riesgos-ciberneticos
+/rotura_maquinaria          /seguros/rotura-de-maquinaria
+/atencion-a-clientes        /contacto/#contact-form
+/Accidentes-y-Enfermedades  /condiciones/accidentes-y-enfermedades/
+/Danos.html                 /condiciones/danos
