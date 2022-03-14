@@ -39,4 +39,4 @@ En México y en el mundo hay una gran cantidad de minas subterráneas y minas a 
 
 En SPP Institución de Seguros, somo especialistas en amparar todo tipo de equipos que se emplean en la minería en general con una amplia gama de coberturas especializadas y cuotas muy competitivas.
 
-¡No dejes pasar esta oportunidad y cotiza con nosotros! Te invitamos a conocer más de él dando clic en el siguiente enlace: <https://mkt.sppseguros.com.mx/seguros/contratistas/>
+¡No dejes pasar esta oportunidad y cotiza con nosotros! Te invitamos a conocer más de él dando clic en el siguiente enlace: [https://sppseguros.com.mx/seguros/contratistas/](https://mkt.sppseguros.com.mx/seguros/contratistas/)

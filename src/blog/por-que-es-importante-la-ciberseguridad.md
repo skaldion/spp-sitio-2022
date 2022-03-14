@@ -33,4 +33,4 @@ México se ubica entre los países con mayor preparación y conocimiento en segu
 * Reportar cualquier actividad sospechosa al área responsable, nada es exagerado.
 * No ingresar a enlaces sospechosos o de dudosa providencia
 
- En SPP Institución de Seguros, estamos conscientes que los ataques pueden llegar incluso al más protegido, por ello, contamos con un seguro de Riesgos Cibernéticos pensado específicamente para PyMES, el cual te hará sentir tranquilo y protegido, te invitamos a conocer más de él dando clic en el [siguiente enlace](<https://mkt.sppseguros.com.mx/seguros/riesgos-ciberneticos/>).[](https://mkt.sppseguros.com.mx/seguros/riesgos-ciberneticos/)
+ En SPP Institución de Seguros, estamos conscientes que los ataques pueden llegar incluso al más protegido, por ello, contamos con un seguro de Riesgos Cibernéticos pensado específicamente para PyMES, el cual te hará sentir tranquilo y protegido, te invitamos a conocer más de él dando clic en el [siguiente enlace](https://sppseguros.com.mx/seguros/riesgos-ciberneticos/).[](https://mkt.sppseguros.com.mx/seguros/riesgos-ciberneticos/)
