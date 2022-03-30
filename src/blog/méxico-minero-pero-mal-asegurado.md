@@ -11,8 +11,6 @@ date: 2022-03-10T14:31:41.506Z
 tags:
   - Seguros
 ---
-# México minero, pero mal asegurado
-
 La historia de México está íntimamente ligada a la actividad minera. Desde la época prehispánica hasta la actualidad, la minería ha estado presente en la economía mexicana.
 
 Obras mineras antiguas y vestigios de esta actividad abundan en nuestro territorio y muchas de las ciudades antiguas nacieron a raíz de la minería.
@@ -39,4 +37,4 @@ En México y en el mundo hay una gran cantidad de minas subterráneas y minas a 
 
 En SPP Institución de Seguros, somo especialistas en amparar todo tipo de equipos que se emplean en la minería en general con una amplia gama de coberturas especializadas y cuotas muy competitivas.
 
-¡No dejes pasar esta oportunidad y cotiza con nosotros! Te invitamos a conocer más de él dando clic en el siguiente enlace: [https://sppseguros.com.mx/seguros/contratistas/](https://mkt.sppseguros.com.mx/seguros/contratistas/)
+¡No dejes pasar esta oportunidad y cotiza con nosotros! Te invitamos a conocer más, da clic en el siguiente enlace: [https://sppseguros.com.mx/seguros/contratistas/](https://mkt.sppseguros.com.mx/seguros/contratistas/)
