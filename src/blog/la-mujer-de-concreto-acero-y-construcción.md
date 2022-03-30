@@ -1,5 +1,5 @@
 ---
-featuredImg: /static/img/mujer1.png
+featuredImg: /static/img/mujer1-min.png
 featuredImgAlt: Mujer en construcción casco y chaleco de seguridad
 title: La mujer de concreto, acero y construcción
 description: Desde hace algunos años las mujeres están desempeñando labores que
@@ -15,7 +15,7 @@ Desde hace algunos años las mujeres están desempeñando labores que antes se p
 
 Podrás conocerás algunas de esas mujeres que han marcado historia en la construcción. La actual dinámica mundial, el rol de la mujer ha cambiado día a día, ya no sólo se dedica a ser ama de casa y a cuidar a sus hijos, sino que ejerce diversos roles profesionales y, la construcción es uno de ellos.
 
-![mujeres construcción supervisión](/static/img/mujer2.png "supervición obra civil")
+![mujeres construcción supervisión](/static/img/mujer2-min.png "supervición obra civil")
 
 Actualmente en muchos lugares del mundo todavía es difícil aceptar la igualdad de género, las profesionales del rubro de la construcción no sólo asisten a los hombres, sino que además son líderes de proyectos e incluso son dueñas de sus propias empresas constructoras.
 
@@ -27,7 +27,7 @@ Actualmente en muchos lugares del mundo todavía es difícil aceptar la igualdad
 
 **Zaha Hadid** única mujer que ha sido galardonada con el Premio Freezer en el año 2004 por la obra para el Centro de tratamiento contra el cáncer Maggie. Sn duda es una de las principales figuras de la arquitectura contemporánea mundial también ha recibido Premio Mies van der Rohe en el 2003 y el Praemium Imperiale en el 2009. Es la única mujer arquitecta que es mencionada entre los 10 mejores arquitectos del mundo en la actualidad.
 
-![construccion edificio ](/static/img/edificiio1.jpg "pasillo blanco")
+![construccion edificio ](/static/img/edificiio1-min.jpg "pasillo blanco")
 
 Sin duda alguna el aporte de las mujeres al desarrollo de esta profesión no se limita sólo a una lista, ya que día a día vemos como muchísimas mujeres incursionan en carreras como la arquitectura, ingeniería a nivel mundial. Siendo un 40% de esos estudiantes.
 
