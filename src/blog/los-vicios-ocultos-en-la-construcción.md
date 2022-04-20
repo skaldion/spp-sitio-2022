@@ -1,9 +1,9 @@
 ---
-featuredImg: /static/img/20170424_claves_para_reclamar_vicios_de_la_construccion.jpg
+featuredImg: /static/img/20170424_claves_para_reclamar_vicios_de_la_construccion-min.jpg
 featuredImgAlt: Casa con grieta visible
 title: Los Vicios Ocultos en la Construcción
-description: ¿Qué es un vicio oculto? la palabra vicio viene de la palabra
-  vitium que en latín significa defecto. la palabra oculto su raíz etimológica
+description: ¿Qué es un vicio oculto? La palabra vicio viene de la palabra
+  vitium que en latín significa defecto. La palabra oculto su raíz etimológica
   viene de la palabra occultus que en latín quiere decir escondido o ignorado,
   no dado a conocer.
 author: SPP
@@ -17,11 +17,9 @@ La definición que podemos encontrar con mayor certeza es que son aquellos defec
 
 Muchas veces el vendedor que ofrece ese inmueble desconoce de las existencias de estos desperfectos, te ofrece ese bien desconociendo que las condiciones no son óptimas. La responsabilidad que tiene un vendedor a la hora de venderte un bien que tiene vicios ocultos es del 100%.
 
-![Techo con Gotera](/static/img/roof-leak.jpg "Techo con Gotera")
+![Techo con Gotera](/static/img/roof-leak-min.jpg "Techo con Gotera")
 
 ## **Tipos de vicios ocultos**
-
-
 
 Existen diferentes tipos de vicios ocultos que se deben de tomar en cuenta antes de adquirir un inmueble.
 
@@ -29,13 +27,9 @@ Existen diferentes tipos de vicios ocultos que se deben de tomar en cuenta antes
 
 No es otra cosa que adquirir un inmueble y este no pertenezca al propietario que aparentemente te la vende. Esto es difícil ya que existen registros públicos de la propiedad, intervención de un notario.
 
- 
-
 **Deuda con la comunidad, hacienda o empresa suministro.**
 
 Antes de comprar debes saber si existen deudas de mantenimientos, predial, agua, luz, etc. Ya que al adquirir el inmueble esas deudas serán tu responsabilidad como nuevo dueño.
-
-
 
 **Problemas de humedades cañerías y otras instalaciones.**
 
@@ -43,9 +37,7 @@ No todo lo q hay en una casa está a la vista, así que debes asegurarte contand
 
 No te confíes esta bien que preguntes a los vecinos sobre cualquier escurrimiento de agua o fugas de gas, o problemas de baja en la energía eléctrica
 
- 
-
-![Tipos de vicios ocultos](/static/img/info_vicios_ocultos.jpg "Infografía: Vicios Ocultos")
+![Tipos de vicios ocultos](/static/img/info_vicios_ocultos-min.jpg "Infografía: Vicios Ocultos")
 
 **Defectos constructivos.**
 
