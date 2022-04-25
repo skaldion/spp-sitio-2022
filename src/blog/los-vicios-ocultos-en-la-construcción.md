@@ -49,4 +49,4 @@ Para protegerte de estos dos últimos, en ***SPP*** contamos con el primer Segur
 
 No esperes más y cotiza con nosotros, recuerda que en ***SPP*** te cuidamos a ti y cuidamos tu patrimonio. 
 
-Te invitamos a conocer más de él dando clic en el siguiente enlace: https://www.sppseguros.com.mx/seguros/vicios-ocultos/[](https://www.sppseguros.com.mx/seguros/obra-civil/)
+Te invitamos a conocer más de él dando clic en el siguiente enlace: <https://www.sppseguros.com.mx/seguros/vicios-ocultos/>[](https://www.sppseguros.com.mx/seguros/obra-civil/)
