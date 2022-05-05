@@ -1,5 +1,5 @@
 ---
-featuredImg: /static/img/campo_de_paneles_solares.jpg
+featuredImg: /static/img/campo_de_paneles_solares-min.jpg
 featuredImgAlt: Campo de paneles solares
 title: "  PANELES SOLARES, ¿Conoces programa de Cobertura Total?"
 description: Los paneles solares requieren un cuidado especial, y pueden ser una
@@ -16,7 +16,7 @@ La energía no se crea ni se destruye sólo se transforma o se transfiere entre 
 
 Existen 2 tipos de fuentes de Energía renovables y fuentes de energía no renovables. Las primeras son aquellas presentes en la naturaleza que no se agotan como por ejemplo el viento, la luz del sol o las olas del mar y las fuentes de energía no renovables son aquellas que se agotan a medida que las usamos como el petróleo o el carbón.
 
-![energia solar, energia eolica, energia renovable](/static/img/energia-renovable.jpg "Energia renovable")
+![energia solar, energia eolica, energia renovable](/static/img/energia-renovable-min.jpg "Energia renovable")
 
 Muy bien ya conocemos la información necesaria sobre Energía, ahora entendamos un poco más sobre la energía solar; los seres humanos la han utilizado desde el principio de la historia, sabemos que los primeros pobladores usaron los rayos del sol para ayudarse a hacer fuego, los griegos, asiáticos y romanos construían sus casas orientadas hacia el sur, para mantenerlas con una temperatura cálida durante la época de frio.
 
@@ -32,7 +32,7 @@ La energía solar llega a la Tierra en forma de rayos, nuestro sol emite 3 tipos
 
 Hoy en día es posible convertir la energía solar en electricidad que es la que utilizamos para alimentar una variedad de dispositivos, algunos los utilizamos en nuestros hogares, negocios y hasta en diferentes medios de transporte como los nuevos automóviles eléctricos que están muy de moda.
 
-![centro de carga para vehículos eléctricos](/static/img/centro_de_carga.jpg "automóvil eléctrico")
+![centro de carga para vehículos eléctricos](/static/img/centro_de_carga-min.jpg "automóvil eléctrico")
 
 Los Paneles solares son una de las formas más frecuentes de convertir la energía solar en electricidad, se le llama Energía Solar Fotovoltaica.
 
