@@ -1,6 +1,7 @@
 ---
 title: 'Cyber Risk'
-permalink: 'cyber-risk/index.html'
+layout: base
+permalink: 'seguro-riesgos-ciberneticos-ad/index.html'
 ---
 
 
@@ -12,7 +13,7 @@ image:"/static/img/landing-page/flyer6.png"
         title:"¿Por qué contratar un seguro de Riesgos Cibernéticos?"
         paragraph:"México fue el país latinoamericano con el mayor número de ciberataques durante 2021, con más de 156,000 millones de intentos durante ese año. Obviamente, la mayoría de estos ataques los sufrieron empresas con un nivel de vulnerabilidad relevante; sin embargo, la gran mayoría de estas son PyMES. (fuente: Business Insider)"
         button_1:"Contáctanos"
-        buttonURL: "/contacto/#contact-form"
+        buttonURL: "#contact-form"
 %}
 
 {% include ../_includes/partials/pricing-sections/single-price-spp.html,
@@ -54,10 +55,7 @@ iconName:""
 
 <section class="relative bg-white" aria-labelledby="contact-heading">
     <div class="absolute w-full h-1/2 bg-warm-gray-50" aria-hidden="true"></div>
-    <div
-            id="contact-form"
-            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
-    >
+    <div id="contact-form" class="max-w-7xl mx-auto">
         <div class="relative bg-white shadow-xl">
             <h2 id="contact-heading" class="sr-only">Contáctanos</h2>
 
@@ -109,12 +107,12 @@ iconName:""
                 >
                     <h3 class="text-lg font-medium text-warm-gray-900">Completa el formulario</h3>
                     <form
-                            action="/exito"
-                            method="POST"
-                            class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
-                            data-netlify="true"
-                            novalidate
-                            data-validation='needs-validation'
+                        action="/exito"
+                        method="POST"
+                        class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
+                        data-netlify="true"
+                        novalidate
+                        data-validation='needs-validation'
                     >
                         <style type="text/css" scoped>
                             .was-validated .validation-feedback {
@@ -181,4 +179,6 @@ iconName:""
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="/static/js/jquery-3.6.0.slim.min.js"></script>
+    <script type="text/javascript" src="/static/js/main.js"></script>
 </section>

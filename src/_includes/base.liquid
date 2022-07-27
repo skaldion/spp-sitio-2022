@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      {{title | append: settings.pageTitleDivider | append: settings.pageTitlePrefix}}
+    </title>
+    {% if description %}
+      <meta name="description" content="{{description}}"/>
+    {% endif %}
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    {% block head %}{% endblock %}
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+    <style>[x-cloak] { display: none !important; }</style>
+  </head>
+  <body>
+    <div class="relative bg-gray-50">
+      {% include ./partials/header-simple %}
+      {{ content | safe }}
+      {% include ./partials/footer-simple %}
+    </div>
+
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8SN6B83NG9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-8SN6B83NG9');
+    </script>
+  </body>
+</html>
