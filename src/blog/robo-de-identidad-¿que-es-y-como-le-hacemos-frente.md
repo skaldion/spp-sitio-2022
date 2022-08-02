@@ -1,7 +1,7 @@
 ---
 featuredImg: /static/img/robo-identidad.jpg
 featuredImgAlt: persona con tarjeta de crédito
-title: Robo de Identidad, ¿Que es? y como le hacemos frente.
+title: Robo de Identidad, ¿Qué es? y formas de evitarlo
 description: La identidad se compones de nuestros datos personales como es
   nombre, teléfono, dirección, fotos, huellas digitales, número de seguridad
   social, número de licencia o cualquier otro dato que nos identifique.
