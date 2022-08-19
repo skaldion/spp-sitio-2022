@@ -31,6 +31,9 @@ module.exports = {
         'spp-accent-gray-light': '#E6F4F1',
         'spp-accent-blue-light': '#00B0FF',
         'spp-accent-green-light': '#91E885',
+        'spp-campaign-blue': '#26C0E4',
+        'spp-campaign-bg-1': '#1F227F',
+        'spp-campaign-bg-2': '#1D1A4F',
       },
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],

@@ -34,7 +34,7 @@ module.exports = function (eleventyConfig) {
     locale: 'es'
   })
 
-  // Syntax Highlighting for Code blocks
+  // Syntax Highlighting for Code custom
   eleventyConfig.addPlugin(syntaxHighlight);
 
   // To Support .yaml Extension in _data
