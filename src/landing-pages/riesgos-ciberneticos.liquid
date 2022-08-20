@@ -4,17 +4,17 @@ layout: base
 permalink: 'seguro-riesgos-ciberneticos-ad/index.html'
 ---
 
+
+
 {% include ../_includes/partials/cta-sections/split-with-image.html,
 image:"/static/img/landing-page/cyber1.jpg"
         alt:"Candado en flyer seguro de riesgos cibernéticos"
         highlight:"Seguro de Riesgos Cibernéticos PYMES"
         title:"¿Por qué contratar un seguro de Riesgos Cibernéticos?"
-        paragraph:"Para  evitar pérdidas en tu empresa ocasionadas, no sólo por responsabilidad frente a terceros, sino también eventos propios de la operación día a día de tu negocio. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        paragraph:"Para  evitar pérdidas en tu empresa ocasionadas, no sólo por responsabilidad frente a terceros, sino también eventos propios de la operación día a día de tu negocio.<br><br>¡Permítenos proteger tu empresa!</br></br>"
         button_1:"Contáctanos"
         buttonURL: "#contact-form"
 %}
-
-{% include ../_includes/partials/custom/features %}
 
 {% include ../_includes/partials/pricing-sections/single-price-spp.html,
 main_title:"Protégete y asegura"
@@ -26,18 +26,22 @@ main_title:"Protégete y asegura"
         seronepris: seronepris.RCA
 %}
 
-{% include ../_includes/partials/custom/benefits,
-        highlight:"EXTRAS"
-        main_title:"Y lo mejor!"
 
-        description: "Al contratar la póliza te <i>obsequiamos</i> los siguientes beneficios:"
-
-        benefits: ['Recibirás un boletín de noticias respecto a vulnerabilidades detectadas globalmente.',
-        'Realizamos un análisis en fuentes abiertas, en donde se tendrá una detección de algún ciberamenaza  y pueda  ocasionar una pérdida o daño en la Organización',
-        'Academia de ciberseguridad donde cursarán 15 módulos del programa de concientización en ciberseguridad en tu negocio']
-
-        footer: "<i>Nuestro Seguro de Riesgos Cibernéticos, te ampara y protege, tendrás el respaldo de una empresa especialista en soluciones de ciberseguridad innovadoras e integrales para salvaguardar los activos más estratégicos de tu negocio.</i>"
+{% include ../_includes/partials/stats/split-with-image-reversed.liquid,
+iconName:""
+        image:"/static/img/landing-page/cyber2.jpg"
+        alt:"Lista de assets seguro riesgos cibernéticos"
+        mainTitle:"<i>Y lo mejor</i> al contratar la póliza te <i>obsequiamos</i> los siguientes beneficios:"
+        contentHTML: '
+    <ul role="list">
+    <li>Recibirás un boletín de noticias respecto a vulnerabilidades detectadas globalmente.</li>
+    <li>Realizamos un análisis en fuentes abiertas, en donde se tendrá una detección de algún ciberamenaza  y pueda  ocasionar una pérdida o daño en la Organización.</li>
+    <li>Academia de ciberseguridad donde cursarán 15 módulos del programa de concientización en ciberseguridad en tu negocio.</li>
+    </ul>
+    <p><i>En todo momento tendrás el respaldo de una empresa especializada en soluciones de ciberseguridad innovadoras e integrales para salvaguardar los activos más estratégicos en tu empresa.</i></p>
+    '
 %}
+
 
 <section class="relative bg-white" aria-labelledby="contact-heading">
     <div class="absolute w-full h-1/2 bg-warm-gray-50" aria-hidden="true"></div>
