@@ -1,0 +1,10 @@
+benefits:
+  - msg: "Recibirás un boletín de noticias respecto a vulnerabilidades detectadas globalmente"
+    icon: <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="#FFFFFF"><path d="M6 17h5v-2H6Zm10 0h2v-2h-2ZM6 13h5v-2H6Zm10 0h2V7h-2ZM6 9h5V7H6ZM4 21q-.825 0-1.412-.587Q2 19.825 2 19V5q0-.825.588-1.413Q3.175 3 4 3h16q.825 0 1.413.587Q22 4.175 22 5v14q0 .825-.587 1.413Q20.825 21 20 21Zm0-2h16V5H4v14Zm0 0V5v14Z"/></svg>
+    title: "Noticias"
+  - msg: "Realizamos un análisis en fuentes abiertas, en donde se tendrá una detección de algún ciberamenaza  y pueda  ocasionar una pérdida o daño en la Organización"
+    icon: <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="#FFFFFF"><path d="M11 17h2v-6h-2Zm1-8q.425 0 .713-.288Q13 8.425 13 8t-.287-.713Q12.425 7 12 7t-.712.287Q11 7.575 11 8t.288.712Q11.575 9 12 9Zm0 13q-3.475-.875-5.737-3.988Q4 14.9 4 11.1V5l8-3 8 3v6.1q0 3.8-2.262 6.912Q15.475 21.125 12 22Zm0-2.1q2.6-.825 4.3-3.3 1.7-2.475 1.7-5.5V6.375l-6-2.25-6 2.25V11.1q0 3.025 1.7 5.5t4.3 3.3Zm0-7.9Z"/></svg>
+    title: "Análisis"
+  - msg: "Academia de ciberseguridad donde cursarán 15 módulos del programa de concientización en ciberseguridad en tu negocio"
+    icon: <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0z" fill="none"/><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+    title: "Entrenamiento"
